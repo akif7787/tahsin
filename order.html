@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="order.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Tanha-Tahsin Enterprice</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="book.html">Books</a></li>
+            </ul>
+        </nav>
+        <nuv>
+            <ul>
+            <p>Upozila Gate, Senbag, Noakhali</p>
+                </ul>
+        </nuv>
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h2>Order Form</h2>
+            <form id="orderForm">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" value="Product Name" readonly>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" value="XX.XX" readonly>
+                <button type="button" id="confirmOrder">Confirm Order</button>
+            </form>
+        </section>
+
+        <section class="order-confirmation" id="orderConfirmation" style="display: none;">
+            <h2>Order Confirmation</h2>
+            <p>Your order has been confirmed. Thank you for shopping with us!</p>
+            <h3>Order Details:</h3>
+            <p><strong>Product Name:</strong> <span id="confirmProductName"></span></p>
+            <p><strong>Quantity:</strong> <span id="confirmQuantity"></span></p>
+            <p><strong>Price:</strong> $<span id="confirmPrice"></span></p>
+            <!-- Add additional order details here if needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tanha-Tahsin Enterprice. All rights reserved.</p>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>
